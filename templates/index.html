@@ -20,7 +20,8 @@
         <nav class="navbar">
             <div class="container" style="padding-top: 5px;padding-bottom: 5px;">
                 <a class="navbar-brand" href="#" style="padding-top: 5px;">
-                    <img style="width:40px;height:40px" src="{{ url_for('static', filename = 'favicon.png') }}" alt="Logo">
+                    <img style="width:40px;height:40px" src="{{ url_for('static', filename = 'favicon.png') }}"
+                         alt="Logo">
                 </a>
                 <div class="navbar-menu">
                     <ul class="nav navbar-nav navbar-right">
@@ -28,16 +29,16 @@
                             <a class="nav-menu-item n1" href="#home">Home</a>
                         </li>
                         <li class="nav-menu">
-                            <a class="nav-menu-item n1"  href="#experience">Experience</a>
+                            <a class="nav-menu-item n1" href="#experience">Experience</a>
                         </li>
-                         <li class="nav-menu">
+                        <li class="nav-menu">
                             <a class="nav-menu-item n1" href="#projects">Projects</a>
                         </li>
                         <li class="nav-menu">
-                            <a class="nav-menu-item n1"  href="#skills">Skills</a>
+                            <a class="nav-menu-item n1" href="#skills">Skills</a>
                         </li>
-						<li class="nav-menu">
-                            <a class="nav-menu-item n1"  href="#contact">Contact</a>
+                        <li class="nav-menu">
+                            <a class="nav-menu-item n1" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -49,7 +50,8 @@
 <main>
     <div class="container">
         <div class="column main-cont">
-            <div class="parallax" style="background-image: url({{ url_for('static', filename = 'background.png') }})"></div>
+            <div class="parallax"
+                 style="background-image: url({{ url_for('static', filename = 'background.png') }})"></div>
             <section class="cover-img">
                 <div>
                     <h2 style="padding:100px 20px 0px 175px">Hello I am Hanvitha!</h2>
@@ -70,10 +72,11 @@
 
             </section>
 
-            <div class="parallax" style="background-image: url({{ url_for('static', filename = 'experience.png') }});"></div>
+            <div class="parallax"
+                 style="background-image: url({{ url_for('static', filename = 'experience.png') }});"></div>
             <section class="profile-items experience" id="experience">
                 {% if  experiences %}
-                    {% for exp in experiences  %}
+                    {% for exp in experiences %}
                         <div class="item">
                             <div class="image">
                                 <div>
@@ -95,11 +98,12 @@
 
             </section>
 
-            <div class="parallax" style="background-image: url({{ url_for('static', filename = 'projects.png') }});"></div>
+            <div class="parallax"
+                 style="background-image: url({{ url_for('static', filename = 'projects.png') }});"></div>
             <section id="projects">
                 <h3>Projects</h3>
                 {% if projects %}
-                    {% for proj in projects  %}
+                    {% for proj in projects %}
                         <div class="panel project-details">
                             <h4>{{ proj.name }} </h4>
                             <p>
@@ -111,20 +115,23 @@
 
 
             </section>
-            <div class="parallax" style="background-image: url({{ url_for('static', filename = 'skills.png') }});"></div>
+            <div class="parallax"
+                 style="background-image: url({{ url_for('static', filename = 'skills.png') }});"></div>
             <section id="skills">
                 <h3>Skills</h3>
                 {% if skills %}
-                    {% for skill in skills  %}
-                    <div class="barWrapper" id='bar-wrap'>
-                        <span class="progressText"><B>{{ skill.name }}</B></span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="{{ skill.proficiency }}" aria-valuemin="0"
-                                 aria-valuemax="100">
-                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="{{ skill.proficiency }}%"> </span>
+                    {% for skill in skills %}
+                        <div class="barWrapper" id='bar-wrap'>
+                            <span class="progressText"><B>{{ skill.name }}</B></span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="{{ skill.proficiency }}"
+                                     aria-valuemin="0"
+                                     aria-valuemax="100">
+                                    <span class="popOver" data-toggle="tooltip" data-placement="top"
+                                          title="{{ skill.proficiency }}%"> </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     {% endfor %}
                 {% endif %}
 
@@ -137,51 +144,51 @@
 
                 <div class="container">
                     {% if blogs %}
-                    {% for blog in blogs  %}
-                        <div class="panel project-details">
-                            <h3>Tech Blog </h3>
-                            <p>
-                                Want to learn some new tech stuff with me? Then go ahead and click -
-                                <a href="https://hanvithagavini.blogspot.com">here</a>
-                            </p>
-                        </div>
-                    {% endfor %}
+                        {% for blog in blogs %}
+                            <div class="panel project-details">
+                                <h3>Tech Blog </h3>
+                                <p>
+                                    Want to learn some new tech stuff with me? Then go ahead and click -
+                                    <a href="https://hanvithagavini.blogspot.com">here</a>
+                                </p>
+                            </div>
+                        {% endfor %}
                     {% endif %}
 
-                    </div>
-                </div>
-            </section>
-
-            <div class="parallax" style="background-image: url({{ url_for('static', filename = 'contact.png') }});"></div>
-
-            <section id="contact">
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <form action="mailto:hanvitha.gavini@utdallas.edu" class="form-horizontal" method="post">
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Chandler Bing">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email"
-                                           placeholder="chandler.bing@example.com">
-                                </div>
-                                <div class="form-group ">
-                                    <label for="message">Your Message</label>
-                                    <textarea class="form-control" id="message" placeholder="Description"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-black" style="background: black;color:#ffe4e1;">
-                                    Send Message
-                                </button>
-                            </form>
-                        </div>
-                    </div>
                 </div>
         </div>
         </section>
+
+        <div class="parallax" style="background-image: url({{ url_for('static', filename = 'contact.png') }});"></div>
+
+        <section id="contact">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <form action="mailto:hanvitha.gavini@utdallas.edu" class="form-horizontal" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Chandler Bing">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email"
+                                       placeholder="chandler.bing@example.com">
+                            </div>
+                            <div class="form-group ">
+                                <label for="message">Your Message</label>
+                                <textarea class="form-control" id="message" placeholder="Description"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-black" style="background: black;color:#ffe4e1;">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
 
     </div>
 </main>
@@ -196,8 +203,7 @@
             <a href="https://plus.google.com/+HanvithaGavini"><i class="fa fa-google-plus-square fa-3x social"></i></a>
             <a href="mailto:hanvitha.gavini@utdallas.edu"><i class="fa fa-envelope-square fa-3x social"></i></a>
             <a href="http://lastingrelationwithgod.blogspot.com/"><i class="fa fa-rss-square fa-3x social"></i></a>
-            <a href="https://www.linkedin.com/in/hanvitha-gavini-44482524/"><i
-                    class="fa fa-linkedin-square fa-3x social"></i></a>
+            <a href="https://www.linkedin.com/in/hanvitha-gavini-44482524/"><i class="fa fa-linkedin-square fa-3x social"></i></a>
         </div>
         <br>
     </div>
