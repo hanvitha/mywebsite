@@ -1,12 +1,12 @@
 experiences = [
-    {
-         "position": "Associate Solutions Architect",
-         "company": "Red Hat",
-         "start": "2019",
-         "end": "current",
-         "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeG_KQfoo6oTTplsjFZ55kEiQ7F2vO5wY4Ub2Kwwe5RWyT0mI",
-         "work_detail": "Playing a critical role in facing customers, learning their software requirements and providing solutions precisely.  Create compelling demos using new technologies and Red Hat products in order to make good deals. OpenShift, JBoss Studio, Ansible, Oracle Virtual Box are the tools used most of the time. Python, Java, Machine Learning, Shell Scripting and many more technologies are used based on the customer requirements. Red Hat is the world’s leading provider of open source contributing vastly to the software community. This Job exposes and equips to contribute to community through wide range of technologies."
-     },
+#    {
+#         "position": "Associate Solutions Architect",
+#         "company": "Red Hat",
+#         "start": "2019",
+#         "end": "current",
+#         "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeG_KQfoo6oTTplsjFZ55kEiQ7F2vO5wY4Ub2Kwwe5RWyT0mI",
+#         "work_detail": "Playing a critical role in facing customers, learning their software requirements and providing solutions precisely.  Create compelling demos using new technologies and Red Hat products in order to make good deals. OpenShift, JBoss Studio, Ansible, Oracle Virtual Box are the tools used most of the time. Python, Java, Machine Learning, Shell Scripting and many more technologies are used based on the customer requirements. Red Hat is the world’s leading provider of open source contributing vastly to the software community. This Job exposes and equips to contribute to community through wide range of technologies."
+#     },
     {
         "position": "Product Developer",
         "company": "Kony Inc",
