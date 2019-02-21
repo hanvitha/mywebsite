@@ -146,10 +146,10 @@
                     {% if blogs %}
                         {% for blog in blogs %}
                             <div class="panel project-details">
-                                <h3>Tech Blog </h3>
+                                <h3>{{ blog.name }}</h3>
                                 <p>
-                                    Want to learn some new tech stuff with me? Then go ahead and click -
-                                    <a href="https://hanvithagavini.blogspot.com">here</a>
+                                    {{ blog.blog_detail }}
+                                    
                                 </p>
                             </div>
                         {% endfor %}
