@@ -1,1 +1,2 @@
-APP_CONFIG=app.py
+UPGRADE_PIP_TO_LATEST=1
+APP_CONFIG=config.py
